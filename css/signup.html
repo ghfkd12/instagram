@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .signup{
+            border: solid;
+            background: white;
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px
+
+        }
+        .signup h3{
+            text-align: left;
+            margin-left: 10px;
+        }
+        .signup button{
+            background: blue;
+            color: white;
+            border-style: none;
+            border-radius: 4px;
+        }
+        .signup1 input{
+            padding: 10px;
+            
+        }
+        .signup1 button{
+            padding: 10px;   
+        }
+        .signup1 option{
+            margin: 10px;
+        }
+        .mo1{
+            margin-left: -76px;
+        }
+        .mo2{
+            margin-left: -76px;
+        }
+        .button{
+            margin: 10px;
+            border-style: none;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .signup3 a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup">
+        <div class="signup1">
+            <h1>회원가입</h1>
+            <!-- <div class="signup2"> -->
+                <h3>이름</h3>
+                <div class="mo1">
+                    <input type="text" placeholder="이름 입력">
+                </div>
+                <h3>아이디</h3>
+                <input type="text" id="username" placeholder="아이디입력">
+                <button>중복체크</button>
+                <h3>비밀번호</h3>
+                <div class="mo2">
+                    <input type="password" placeholder="비밀번호 입력">
+                </div>
+                <h3>이메일</h3>
+                <input type="text" id="email" placeholder="이메일">@
+                <select size="1">
+                    <option>naver.com</option>
+                    <option>gmail.com</option>
+                </select>
+            <!-- </div> -->
+        </div>
+        <button class="button">회원가입</button>
+        <div class="signup3">
+            이미 계정이 있으신가요? <a href="#">로그인</a>
+        </div>
+    </div>
+</body>
+</html>
