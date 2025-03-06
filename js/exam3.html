@@ -63,14 +63,15 @@
 
     let random=[];
     out:for(let i=0; i<6;){
-        random =Math.floor(Math.random()*45)+1;
-        if(random===Math.floor(Math.random()*45)+1){
-            continue out;
+        random[i] =Math.floor(Math.random()*45)+1;
+            for(j=0; j<i; j++){
+                if(random[i]===random[j]){
+                continue out;
+                }
         }
         i++
-        document.write(random,"<br>")
     }
-    
+    document.write(random,"<br>")
 
     // let lotto= new Array(6);
 

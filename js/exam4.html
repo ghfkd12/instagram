@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 원의 넓이를 구하는 circleArea 함수 만들기
+        // 원의 둘레를 구하는 circleRound 만들기
+        // circleArea는 함수 안에서 출력하고 마무리
+        // circleRound는 둘레를 반환하기
+        // 원의 넓이 : 3.14 *반지름 *반지름
+        // 원의 둘레 : 3.14 *반지름 *2
+
+        function circleArea(x){
+            let result = x*x*3.14;
+            document.write("원의 넓이 : ", result,"<br>");
+        }
+        circleArea(3);
+
+        function circleRound(x){
+            let result = 2* 3.14*x;
+            return result;
+        }
+
+        document.write(`원의 둘레 : ${circleRound(3)}<br>`)
+
+        document.write("<hr>");
+
+        // 사칙연산을 하는 arithmetic함수 만들기
+        // 두 숫자의 덧셈,뺄셈,곱셈,나눗셈을 구하세요
+
+        function arithmetic(x,y){
+        //     let plus = x+y;
+        //     let minus = x-y;
+        //     let multi = x*y;
+        //     let divide = x/y;
+
+        //     document.write(`덧셈 : ${plus}<br>`)
+        //     document.write(`뺄셈 : ${minus}<br>`)
+        //     document.write(`곱셈 : ${multi}<br>`)
+        //     document.write(`나눗셈 : ${divide}<br>`)
+            console.log(` x + y -> ${x+y}<br>`);
+            console.log(` x - y -> ${x-y}<br>`);
+            console.log(` x * y -> ${x*y}<br>`);
+            console.log(` x / y -> ${x/y}<br>`);
+        }
+
+        arithmetic(10,5);
+
+        document.write("<hr>");
+
+        // fToc함수를 만들어서 화씨를 섭씨로 바꾸기
+        // cTof함수를 만들어서 섭씨를 화씨로 바꾸기
+        // 화씨 -> 섭씨 : (화씨 -32)/1.8
+        // 섭씨 -> 화씨 : 1.8*섭씨+32
+
+        // 1~9사이의 정수를 전달하여 해당 구구단을 출력하는 showTable함수 작성하기
+        // 화면에 출력하시오
+
+        // 매개변수로 임의의 숫자를 전달하여 1~N까지의 총합을 구하는
+        // total함수 만들고 값을 반환하여 화면에 출력하기
+
+        function fToc(x){
+            console.log(`화씨 -> 섭씨 : ${(x-32)/1.8}`);
+        }
+
+        fToc(77);
+
+        function cTof(y){
+            console.log(`섭씨 -> 화씨 : ${1.8*y+32}`);
+        }
+
+        cTof(25);
+
+        document.write("<hr>");
+
+        function showTable(x){
+            let multi =x;
+            for(i=1; i<10; i++){
+                document.write(`${multi} x ${i} = ${multi*i}<br>`)
+            }
+        }
+
+        showTable(3);
+
+        // function gugudan(x){
+        //     let gugudan= '';
+        //     for(let i=1; i<10; i++){
+        //         gugudan += `${x} + ${i} = ${x*i}`
+        //     }
+        //     return gugudan;
+        // }
+        // document.write(gugudan);
+
+        document.write("<hr>");
+        
+        // function total(x){
+        //     sum +=x;
+        //     for(i=1; i<11; i++){
+        //     sum += i;
+        //     }
+        //     return total;
+        // }
+        // document.write(`총합 : ${i}<br>`);
+
+        // total(10);
+
+        function total(N){
+            let total = 0;
+            for(let i = 0; i <=N; i++){
+                total +=i;
+            }
+            document.write(`1부터 ${N}까지의 총합 : ${total}<br>`)
+        }
+
+        total(10)
+
+        document.write("<hr>")
+
+        // N ~ M 까지의 총합
+        // N이 M보다 큰경우 자리를 바꾸서 총합 구하기
+        // ex) 1~5 까지의 총합과 5~1까지의 총합이 같아야함
+
+        // function total2(N,M){
+        //     let total2=0;
+        //     for(let i=0; i<M; i++){
+        //         total2 +=i;
+        //     }
+        //     document.write(`N부터 M까지의 총합 : ${total2}<br>`);
+        //     for(let i=0; M>i>N; i++){
+        //         total2 +=i;
+        //     }
+        //     document.write(`M부터 N까지의 총합 : ${total2}`)
+        // }
+
+        // total2(1,5);
+
+        // function total2(N,M){
+        //     let sum =0;
+        //     if(N>M){
+        //         for(let i=M; i<=N; i++){
+        //             sum +=i;
+        //         }
+        //         document.write(`${M} ~ ${N}까지의 합 : ${sum}<br>`)
+        //     } else if(M>N){
+        //         for(let i=N; i<=M; i++){
+        //         sum += i;
+        //         }
+        //         document.write(`${N}~${M}까지의 합 : ${sum}<br>`)
+        //     }
+        // }
+
+        // total2(5,1)
+
+        // function total2(N,M){
+        //     let sum = 0;
+        //     let temp = 0;
+        //     if(N>M){
+        //         temp =N;
+        //         N=M;
+        //         M=temp;
+        //     }
+        // }
+
+        // 숫자들이 담긴 배열을 매개변수로 받아, 배열 내 최대값을 반환하는
+        // max_arr함수 만들기
+
+        function max_arr(arr){
+            let max = arr[0];
+            for(let i=1; i<arr.length; i++){
+                if(arr[i]>max){
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+
+        document.write(max_arr([10,20,30,40,50]))
+
+        document.write("<hr>");
+
+        // 문자열 뒤집기
+        // 문자열을 매개변수로 받아, 해당 문자열을 뒤집어 반환하는 함수reverse를 작성하세요
+
+        // function reverse(ko){
+        //     let asd = ko[0];
+        //     for(i=0; i>ko.length; i++){
+                
+        //     }
+
+        // }
+
+        // ko(["1","2","3"])
+
+        // '함수의 선언은 공식을 세운다'라고 생각한다.
+
+        // let str= "hello";
+        // let reversed = "";
+
+        // for(let i= str.length-1; i>=0; i--){
+        //     reversed += str[i];
+        // }
+        // document.write(reversed);
+
+
+        function reversed(s){
+            let str= s;
+            let reversed = "";
+
+            for(let i= str.length-1; i>=0; i--){
+            reversed += str[i];
+            }
+            document.write(reversed);
+        }
+
+        reversed("hello")
+
+    
+        
+    </script>
+</body>
+</html>
