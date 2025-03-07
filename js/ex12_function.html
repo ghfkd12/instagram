@@ -6,13 +6,13 @@
     <title>Document</title>
     <script>
         // 함수(function)
-        // 자주 사용하는 명령들을 하나로 모아 재사용할 수 있게 만들어놓은것
+        // 자주 사용하는 명령들을 하나로 모아 재사용하기 위한 묶음
         // function 함수명 (매개변수){
         //      자주 사용하는 명령
         //      return 반환값;
         // }
 
-        // 함수의 선언
+        // 함수의 선언 : 함수를 호출해야 사용가능
         function square(x){
             // 제곱하기 기능
             let result = x*x;
@@ -31,6 +31,8 @@
         document.write(`${square(4)}<br>`);
         document.write(square(5),"<br>");
         document.write(square(4),"<br>");
+
+        // 반환값(return)이 없다 -> 함수 내부에서 온전히 끝난다.
 
         document.write("<hr>")
 

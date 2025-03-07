@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // input에 단을 입력하고 계산시작 누르면 아래에 구구단 나오게하기
+        // 만약 input에 값이 입력이 안되었다면 "값을 입력해주세요"
+        // 만약 input에 1이하 또는 10이상이 입력되었다면 "2~9사이의 값을 입력해주세요"
+        // 숨기기 버튼 누르면 아래 출력된 구구단 숨기면서 버튼에 쓰여진 value "보이기"로 바꾸기
+
+        let func1 = () => {
+            let mul = document.querySelector('#');
+        } 
+
+    </script>
+</head>
+<body>
+    단:<input type="text" id="">
+    <input type="button" value="계산시작" id="multi" onclick="func1()">
+    <button>숨기기</button>
+
+    <hr>
+    <script>
+        let dan = 9;
+        for (let i = 1; i<10; i++){
+            if(dan <1){
+                // alert("2~9사이의 값을 입력해주세요")
+            } else if(dan>10){
+                // alert("2~9사이의 값을 입력해주세요")
+            }
+            document.write(`${dan}X${i} = ${dan*i}<br>`)
+        }
+    </script>
+
+</body>
+</html>
