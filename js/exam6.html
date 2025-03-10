@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function plus(){
+            
+            let plus = document.querySelector('#plus_result');
+            let value = plus.value;
+
+            let su1 = document.querySelector('#su1').value
+            let su2 = document.querySelector('#su2').value
+            let result = document.querySelector('#result').value
+
+            if(su1===""){
+                alert("값을 입력해주세요")
+                return;
+            } else if(su2===""){
+                alert("값을 입력해주세요")
+                return;
+            }
+            result = su1+su2
+            
+        }
+
+        
+    </script>
+</head>
+<body>
+    <p>
+        <table border="2">
+            <tr>
+                <td>수1</td>
+                <td>
+                    <input type="text" id="su1">
+                </td>
+            </tr>
+            <tr>
+                <td>수2</td>
+                <td>
+                    <input type="text" id="su2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="button" value="+" id="plus_result" onclick="plus()">
+                    <input type="button" value="-" id="minus_result" onclick="minus()">
+                    <input type="button" value="*" id="multi_result" onclick="multi()">
+                    <input type="button" value="/" id="divied_result" onclick="divied()">
+                </td>
+            </tr>
+            <tr>
+                <td>결과</td>
+                <td>
+                    <input id="result">
+                </td>
+            </tr>
+        </table>
+    </p>
+</body>
+</html>

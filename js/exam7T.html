@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let path = "html_kms\x01.web\css\image"
+        function prev(){
+            num--;
+            if(num < 1){
+                num = 7 ;
+            }
+            // img 태그의 src에 들어있는 경로를 수정을 해야함
+            let prev_img = document.querySelector("#gallery")
+            prev_img.src = `${path+num}.jpg`
+        }
+
+        function next(){
+            num++;
+            if(num >7){
+                num = 1;
+            }
+
+            let next_image = document.querySelector("#gallery");
+            next_imag.src = `${path+num}`
+        }
+
+        // setInterval("next()",1000);
+        // 각 호출 사이에 고정된 시간으로 함수를 반복적으로 호출할 수 있다.
+        // 1000ms가 1초이다.
+
+        // 1. HTML 작성하기
+        // 2. CSS 주기
+        // > 스타일을 적용할 태그를 먼저 선택을 한다.
+        // 3. JS코드 작성하기
+        // > 제어할 태그를 먼저 선택 document.querySelectot()
+        // > 선택한 태그 제어하기
+
+    </script>
+</head>
+<body>
+    <div id="galleryWrap">
+        <a href="#" onclick="prev()">
+            <img alt="이전" src="\html_kms\1.web\css\image\left_btn.png">
+        </a>
+
+        <img alt="갤러리" id="gallery" src="\html_kms\1.web\css\image\img6.jpg" width="300px" height="200px">
+
+        <a href="#" onclick="next()">
+            <img alt="다음" src="\html_kms\1.web\css\image\right_btn.png">
+        </a>
+    </div>
+</body>
+</html>

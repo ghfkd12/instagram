@@ -11,28 +11,44 @@
         // 숨기기 버튼 누르면 아래 출력된 구구단 숨기면서 버튼에 쓰여진 value "보이기"로 바꾸기
 
         let func1 = () => {
-            let mul = document.querySelector('#');
+            let input = document.querySelector('#res');
+            let value = input.value;
+
+            let m_div = document.querySelector('#m_div');
+            m_div.innerHTML = value;
         } 
+
+        let dan = 0;
+        if(dan <1 ){
+            alert("2~9 사이의 값을 입력해주세요");
+        }  else if( dan > 10){
+            alert("2~9 사이의 값을 입력해주세요");
+        }
+
+        if(dan = none){
+            alert("값을 입력해주세요");
+        }
+
+            
+
+
+        
 
     </script>
 </head>
 <body>
-    단:<input type="text" id="">
-    <input type="button" value="계산시작" id="multi" onclick="func1()">
-    <button>숨기기</button>
-
-    <hr>
-    <script>
-        let dan = 9;
-        for (let i = 1; i<10; i++){
-            if(dan <1){
-                // alert("2~9사이의 값을 입력해주세요")
-            } else if(dan>10){
-                // alert("2~9사이의 값을 입력해주세요")
-            }
-            document.write(`${dan}X${i} = ${dan*i}<br>`)
+    <input id="res">
+    <input type="button" value="계산시작" onclick="func1()">
+    <div id="m_div">
+        <script>
+        let dan1 = 0;
+        for(let i=1; i>10; i++){
+            document.write(`${dan1} x ${i} = ${dan*i}`);
         }
-    </script>
+
+        </script>
+
+    </div>
 
 </body>
 </html>
