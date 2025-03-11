@@ -13,7 +13,7 @@
     </head>
     <body><!-- HTML문서에서 실질적으로 보이는 영역을 정의하는 구간 이미지, 글, 링크, 테이블, 동영상 등등 -->
         <!-- 코드 작성시 엔터를 눌러 줄바꿈을 시도했음에도 불구하고 실행화면에는 한줄로 연결된 채 나온다. -->
-        <div id="top">
+         <div id="top">
             <img src="../image/instagramlogo.png">
             <input value="검색">
             <div>
@@ -22,31 +22,34 @@
                 <i class="fa-solid fa-compass"></i>
                 <i class="fa-solid fa-heart"></i>
             </div>
-        </div>
-        <div id="profile"> 
+         </div>
+
+         <div id="profile">
             <div id="profile_pic">
                 <img src="../image/profile.jpg" class="circle_pic">
             </div>
-        
+
             <div id="profile_info">
                 <div id="id">
                     <span>half_bottle</span>
-                    <i class="fa-solid fa-border-all"></i>
+                    <i class="fa-solid fa-gear"></i>
                 </div>
                 <button>프로필 편집</button>
             </div>
         </div>
+
         <div>
             <p>
-                <strong>
+                <strong id="userInfo">
                     반병현(Bynghyun Ban)<br>
                 </strong>
-                작가<br>
+                <span id="summary">작가</span><br>
             </p>
-            <p> 
+            <p id="profileDetail"> 
                 <a href="https://needleworm.github.io">needleworm.github.io</a>
             </p>
         </div>
+        
         <div id="highlight_area">
             <div class="highlight">
                 <div class="highlight_pic">
@@ -55,20 +58,18 @@
                 <div>
                     😘
                 </div>
-
             </div>
             <div class="highlight">
-                <div  class="highlight_pic">
+                <div class="highlight_pic">
                     <img src="../image/hi 2.jpg" class="circle_pic">
                 </div>
                 <div>
                     😘
                 </div>
             </div>
-            <div>
-
-            </div>
+            <div></div>
         </div>
+
         <div id="stat_bar">
             <div class="stat">
                 게시물<br>
@@ -82,14 +83,14 @@
                 팔로우<br>
                 189
             </div>
-
         </div>
+
         <!-- 아이콘이 들어갈 자리 -->
         <div id="sub_icons">
             <div class="selected">
                 <i class="fa-solid fa-border-all"></i>
-            </div>  
-            <div>          
+            </div>
+            <div>
                 <i class="fa-solid fa-film"></i>
             </div>
             <div>
@@ -102,27 +103,23 @@
                 <i class="fa-solid fa-user-tag"></i>
             </div>
         </div>
+
         <div>
-            <!-- 부모 너비의 32%값이 지정이된다.
-             퍼센트로 지정된 값은 화면 크기에 따라 유동적으로 바뀐다.
-             창 크기의 변화에 맞춰 그때그때 화면의 정보나 크기가 함께
-             바뀌는 웹 페이지를 반응형 웹이라고 한다. -->
             <div class="thumbnail_grid">
-                <img src="image/1.jpg" class="thumbnail">
-                <img src="image/2.jpg" class="thumbnail">
-                <img src="image/3.jpg" class="thumbnail">
+                <img src="../image/1.jpg" class="thumbnail">
+                <img src="../image/2.jpg" class="thumbnail">
+                <img src="../image/3.jpg" class="thumbnail">
             </div>
             <div class="thumbnail_grid">
-                <img src="image/4.jpg" class="thumbnail">
-                <img src="image/5.jpg" class="thumbnail">
-                <img src="image/6.jpg" class="thumbnail">
+                <img src="../image/4.jpg" class="thumbnail">
+                <img src="../image/5.jpg" class="thumbnail">
+                <img src="../image/6.jpg" class="thumbnail">
             </div>
             <div class="thumbnail_grid">
-                <img src="image/7.jpg" class="thumbnail">
-                <img src="image/8.jpg" class="thumbnail">
-                <img src="image/9.jpg" class="thumbnail">
+                <img src="../image/7.jpg" class="thumbnail">
+                <img src="../image/8.jpg" class="thumbnail">
+                <img src="../image/9.jpg" class="thumbnail">
             </div>
         </div>
-
     </body>
 </html>
